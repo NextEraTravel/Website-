@@ -64,7 +64,7 @@ Search for `href="#"` to find these. Each has a comment above it.
 - Replace `hello@example.com` in `contact.html` with the real email, or swap the button for a booking link
 - Confirm the Instagram link in the footer (`instagram.com/nexteratravel`) and add other social links
 - Add real client testimonials to the commented section on the home page
-- Confirm the "custom vacations start from $200 total" line on `index.html` and `process.html`, or remove it. No other prices are shown on the site
+- No prices are shown on the site. Planning investment details are shared on the free discovery call
 - Replace the text credential badges with your official logo files (see the comment above the `badges` list; keep only logos you are licensed to display)
 - Have an attorney review `privacy.html` and `terms.html`, and add your Florida Seller of Travel registration number in `terms.html`
 - Replace the "Coming soon" blog cards on `index.html` with real posts as you publish them
