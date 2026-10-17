@@ -8,14 +8,16 @@
   <meta name="theme-color" content="#56695a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@200;300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
 
-  <header class="site-header">
+  <header class="site-header" id="top">
     <a class="brand" href="index.html">Next Era Travel</a>
-    <nav aria-label="Main">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main">
       <a href="weddings-honeymoons.html">Weddings &amp; Honeymoons</a>
       <a href="couples-travel.html">Couples</a>
       <a href="wellness-travel.html">Wellness</a>
@@ -27,99 +29,249 @@
   </header>
 
   <main>
+    <!-- Hero: headline, subhead, paragraph, then a row of four photos.
+         To use real photos, add style="background-image:url(images/photo.jpg)" to each .ph tile. -->
     <section class="hero">
       <div class="wrap">
         <p class="eyebrow">Luxury travel advisor</p>
-        <h1>Travel is not just about where you go. It is about how you feel while you are there.</h1>
-        <p class="lead">Destination weddings, honeymoons, and couples travel, planned personally so you can settle into the experience instead of managing it.</p>
+        <h1>Travel is about how you feel while you are there.</h1>
+        <p class="lead">Destination weddings, honeymoons, and couples travel, arranged personally so you can settle in instead of managing it.</p>
+        <p class="lead">Most trips get planned in the margins of a busy life. Yours does not have to be.</p>
         <div class="buttons">
           <a class="button" href="contact.html">Book a consultation</a>
           <a class="button ghost" href="process.html">See how it works</a>
         </div>
+        <div class="photo-row">
+          <div class="ph ph-sage" role="img" aria-label="Couple at a quiet beachfront resort"></div>
+          <div class="ph ph-mauve" role="img" aria-label="Destination wedding setup at sunset"></div>
+          <div class="ph ph-sand" role="img" aria-label="Slow morning on a private terrace"></div>
+          <div class="ph ph-sky" role="img" aria-label="Spa and wellness retreat"></div>
+        </div>
       </div>
     </section>
 
-    <section class="section alt center">
-      <div class="wrap narrow">
-        <h2>Most trips are planned while exhausted.</h2>
-        <p>Weeks of research. Tabs open, reviews that contradict each other, prices that change overnight. By the time you book, you are not excited. You are relieved it is over.</p>
-        <p>That is the part I take off your plate. You tell me how you want the trip to feel, and I handle the rest.</p>
-      </div>
-    </section>
-
-    <section class="section">
+    <!-- Pattern-backed intro with paired calls to action -->
+    <section class="pattern">
       <div class="wrap">
-        <h2>Where I can help</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Destination weddings &amp; honeymoons</h3>
-            <p>A wedding that feels like yours, and a honeymoon that feels like an exhale.</p>
+        <div class="panel">
+          <p class="eyebrow">A different way to plan</p>
+          <h2>I plan travel for people who are tired of planning.</h2>
+          <p>You do not need more options. You need someone who listens, narrows the field, and builds the trip around how you want to feel. That is what I do, one client at a time.</p>
+          <div class="buttons">
+            <a class="button" href="contact.html">Start planning</a>
+            <a class="button ghost" href="about.html">Meet Christine</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services carousel -->
+    <section class="section carousel">
+      <div class="wrap">
+        <div class="carousel-head">
+          <div>
+            <p class="eyebrow">Where I can help</p>
+            <h2>Trips planned around you</h2>
+          </div>
+          <button class="carousel-next" type="button" aria-label="Show next service">Next</button>
+        </div>
+        <div class="track">
+          <article class="slide">
+            <div class="ph ph-sage arch" role="img" aria-label="Destination wedding"></div>
+            <h3>Destination weddings</h3>
+            <p>Resort selection, guest travel, and every detail in between.</p>
             <a class="text-link" href="weddings-honeymoons.html">Explore</a>
           </article>
-          <article class="card">
+          <article class="slide">
+            <div class="ph ph-mauve arch" role="img" aria-label="Honeymoon suite"></div>
+            <h3>Honeymoons</h3>
+            <p>An exhale after the planning, arranged before you arrive.</p>
+            <a class="text-link" href="weddings-honeymoons.html#honeymoons">Explore</a>
+          </article>
+          <article class="slide">
+            <div class="ph ph-sand arch" role="img" aria-label="Couples getaway"></div>
             <h3>Couples travel</h3>
-            <p>Time away that brings you back to each other, without a packed itinerary.</p>
+            <p>Time away that brings you back to each other.</p>
             <a class="text-link" href="couples-travel.html">Explore</a>
           </article>
-          <article class="card">
+          <article class="slide">
+            <div class="ph ph-sky arch" role="img" aria-label="Wellness escape"></div>
             <h3>Wellness escapes</h3>
-            <p>Quiet, restorative travel for women who need rest more than motivation.</p>
+            <p>Quiet, restorative travel for women who need rest.</p>
             <a class="text-link" href="wellness-travel.html">Explore</a>
           </article>
-          <article class="card">
+          <article class="slide">
+            <div class="ph ph-terra arch" role="img" aria-label="Group retreat"></div>
             <h3>Groups &amp; retreats</h3>
-            <p>Group travel for coaches, wellness leaders, and businesses, run smoothly.</p>
+            <p>Group travel for coaches, leaders, and teams, run smoothly.</p>
             <a class="text-link" href="group-travel.html">Explore</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt center">
+    <!-- Alternating image and text blocks -->
+    <section class="section alt">
       <div class="wrap">
-        <p class="eyebrow">A belief I plan around</p>
-        <p class="pull">Luxury is not the room. It is the feeling.</p>
-        <div class="narrow" style="margin-top:2rem">
-          <p>Two resorts can share the same rating and feel completely different. One leaves you rested and connected. The other leaves you managing noise. The difference is in the details, and details are where I spend my time.</p>
+        <div class="feature">
+          <div class="feature-media"><div class="ph ph-sage arch" role="img" aria-label="Wedding celebration at a beach resort"></div></div>
+          <div class="feature-text">
+            <p class="eyebrow">Destination weddings</p>
+            <h2>Your guests arrive. The details are already handled.</h2>
+            <p>Your wedding should not feel like managing everyone else's travel. I coordinate with the resort, organize guest bookings, and keep the timeline on track, so you can be present for your own celebration.</p>
+            <a class="text-link" href="weddings-honeymoons.html">Explore weddings</a>
+          </div>
+        </div>
+
+        <div class="feature reverse">
+          <div class="feature-media"><div class="ph ph-mauve arch" role="img" aria-label="Couple on a private terrace"></div></div>
+          <div class="feature-text">
+            <p class="eyebrow">Honeymoons &amp; couples</p>
+            <h2>A honeymoon should feel like an exhale.</h2>
+            <p>Most couples pick resorts backwards, starting with the photos. We start with the feeling: private or social, active or still. The right place follows from there.</p>
+            <a class="text-link" href="couples-travel.html">Explore couples travel</a>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-media"><div class="ph ph-sky arch" role="img" aria-label="Quiet wellness retreat by the water"></div></div>
+          <div class="feature-text">
+            <p class="eyebrow">Wellness travel</p>
+            <h2>Rest is something you plan for.</h2>
+            <p>I plan the conditions that let rest happen: the right setting, an unhurried pace, and logistics already handled when you land.</p>
+            <a class="text-link" href="wellness-travel.html">Explore wellness travel</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- TESTIMONIALS: add real client words here (with permission), then remove the comment markers.
+    <section class="section center">
+      <div class="wrap">
+        <p class="eyebrow">Kind words</p>
+        <blockquote class="quote">Paste a real client quote here.</blockquote>
+        <p class="attrib">Client name, trip</p>
+      </div>
+    </section>
+    -->
+
+    <!-- How it works: five numbered steps with photos -->
     <section class="section">
       <div class="wrap">
-        <h2>Why clients work with me</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>You work with me directly</h3>
-            <p>Live consultations, one person, start to finish. No call center and no booking engine.</p>
-          </article>
-          <article class="card">
-            <h3>I choose for fit</h3>
-            <p>I recommend places based on how they will feel for you, not how they look in a brochure.</p>
-          </article>
-          <article class="card">
-            <h3>Details are handled</h3>
-            <p>Logistics, timing, and the small decisions that change a trip, taken care of before you arrive.</p>
-          </article>
+        <div class="narrow center" style="text-align:center">
+          <p class="eyebrow">How it works</p>
+          <h2>Planning that starts with a conversation.</h2>
         </div>
+        <ol class="process">
+          <li>
+            <div>
+              <div class="num">01</div>
+              <h3>We talk</h3>
+              <p>A live video consultation. I want to hear how you want the trip to feel, who is going, and what has made planning hard so far.</p>
+            </div>
+            <div class="process-media"><div class="ph ph-sage" role="img" aria-label="Video consultation"></div></div>
+          </li>
+          <li>
+            <div>
+              <div class="num">02</div>
+              <h3>Planning fee</h3>
+              <p>The fee covers personalized research and itinerary development, and lets me give your trip my full attention.</p>
+            </div>
+            <div class="process-media"><div class="ph ph-mauve" role="img" aria-label="Planning notes"></div></div>
+          </li>
+          <li>
+            <div>
+              <div class="num">03</div>
+              <h3>Your plan</h3>
+              <p>Options matched to you, with clear recommendations and the reasoning behind each one.</p>
+            </div>
+            <div class="process-media"><div class="ph ph-sand" role="img" aria-label="Curated itinerary"></div></div>
+          </li>
+          <li>
+            <div>
+              <div class="num">04</div>
+              <h3>We book</h3>
+              <p>Once you decide, I handle the booking and the details that come with it.</p>
+            </div>
+            <div class="process-media"><div class="ph ph-sky" role="img" aria-label="Confirmed travel"></div></div>
+          </li>
+          <li>
+            <div>
+              <div class="num">05</div>
+              <h3>Support along the way</h3>
+              <p>I stay in your corner before you leave and while you are away, so you are never on your own if something changes.</p>
+            </div>
+            <div class="process-media"><div class="ph ph-terra" role="img" aria-label="Arriving at the resort"></div></div>
+          </li>
+        </ol>
+        <p style="text-align:center;margin-top:2rem"><a class="text-link" href="process.html">See fees and details</a></p>
       </div>
     </section>
 
+    <!-- Closing call-to-action band -->
     <section class="section sage center">
       <div class="wrap narrow">
         <p class="eyebrow">This is why my clients work with me</p>
         <h2>Tell me about the trip you are picturing.</h2>
         <p>We will start with how you want it to feel and build from there.</p>
-        <a class="button" style="background:#fff;color:#56695a;border-color:#fff" href="contact.html">Book a consultation</a>
+        <a class="button" href="contact.html">Book a consultation</a>
+      </div>
+    </section>
+
+    <!-- Free guide signup -->
+    <section class="section">
+      <div class="wrap">
+        <div class="guide">
+          <div class="mock" aria-hidden="true">
+            <div class="mock-screen">
+              <span class="script">Close the Tabs</span>
+              <span class="small-caps">Trip Clarity Snapshot</span>
+            </div>
+          </div>
+          <div>
+            <p class="eyebrow">Free guide</p>
+            <h2>Close the tabs.</h2>
+            <p>Planning a trip with forty tabs open and no decision? Answer a few quick questions and get your Trip Clarity Snapshot, a simple read on what you actually want from the trip.</p>
+            <!-- Replace href="#" with the link to the Close the Tabs lead magnet. -->
+            <a class="button" href="#">Get the snapshot</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p class="footer-brand">Next Era Travel</p>
-    <p>Luxury travel planning for couples, women, and groups who want to feel something real while they are away.</p>
-    <p class="small">Ocala, Florida &middot; <a href="contact.html">Contact</a></p>
-    <p class="small">&copy; 2026 Next Era Travel, a Next Era Collective LLC company.</p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Next Era Travel</p>
+          <p>Luxury travel planning for couples, women, and groups who want to feel something real while they are away.</p>
+          <p class="small">Based in Ocala, Florida. Planning travel worldwide.</p>
+          <p class="social small"><a href="https://www.instagram.com/nexteratravel" rel="noopener">Instagram</a></p>
+        </div>
+        <div>
+          <h4>For travelers</h4>
+          <ul>
+            <li><a href="weddings-honeymoons.html">Weddings &amp; Honeymoons</a></li>
+            <li><a href="couples-travel.html">Couples Travel</a></li>
+            <li><a href="wellness-travel.html">Wellness Travel</a></li>
+            <li><a href="group-travel.html">Groups &amp; Retreats</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="process.html">How It Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>&copy; 2026 Next Era Travel, a Next Era Collective LLC company.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
   </footer>
 
 </body>
