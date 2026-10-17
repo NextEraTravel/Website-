@@ -210,6 +210,8 @@ p { margin: 0 0 1.1rem; }
 .hero .lead { max-width: 600px; margin: 0 auto 1.2rem; }
 .hero .buttons { margin-top: 2rem; }
 
+.hero-photo { aspect-ratio: 16 / 7; max-width: 1100px; margin: 3.5rem auto 0; border-radius: 4px; }
+@media (max-width: 720px) { .hero-photo { aspect-ratio: 4 / 5; margin-top: 2.5rem; } }
 .photo-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; margin: 3.5rem 0 0; align-items: start; }
 .photo-row .ph { aspect-ratio: 3 / 4; }
 .photo-row .ph:nth-child(even) { margin-top: 2.5rem; }
