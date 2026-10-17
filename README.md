@@ -29,6 +29,9 @@ An editorial, photo-led structure: a scrolling free-guide banner above the heade
 | `order.html` | Guides to order |
 | `about.html` | About Christine |
 | `process.html` | How it works and the planning investment |
+| `blog.html` | Blog index (add each post as its own page) |
+| `privacy.html` | Privacy Policy |
+| `terms.html` | Terms & Conditions |
 | `contact.html` | Book a consultation |
 | `styles.css` | Shared styles |
 | `site.js` | Menu panel and services carousel |
@@ -63,6 +66,8 @@ Search for `href="#"` to find these. Each has a comment above it.
 - Add real client testimonials to the commented section on the home page
 - Confirm the "custom vacations start from $200 total" line on `index.html` and `process.html`, or remove it. No other prices are shown on the site
 - Replace the text credential badges with your official logo files (see the comment above the `badges` list; keep only logos you are licensed to display)
+- Have an attorney review `privacy.html` and `terms.html`, and add your Florida Seller of Travel registration number in `terms.html`
+- Replace the "Coming soon" blog cards on `index.html` with real posts as you publish them
 - Review the Sandals and Beaches copy so the reasons match your own experience
 - Review the About page story and credentials, and add a portrait
 
