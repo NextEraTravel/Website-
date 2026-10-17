@@ -28,7 +28,7 @@ An editorial, photo-led structure: a scrolling free-guide banner above the heade
 | `podcast.html` | Podcast |
 | `order.html` | Guides to order |
 | `about.html` | About Christine |
-| `process.html` | How it works and planning fees |
+| `process.html` | How it works and the planning investment |
 | `contact.html` | Book a consultation |
 | `styles.css` | Shared styles |
 | `site.js` | Menu panel and services carousel |
@@ -61,7 +61,8 @@ Search for `href="#"` to find these. Each has a comment above it.
 - Replace `hello@example.com` in `contact.html` with the real email, or swap the button for a booking link
 - Confirm the Instagram link in the footer (`instagram.com/nexteratravel`) and add other social links
 - Add real client testimonials to the commented section on the home page
-- Confirm the planning fees shown on `process.html`, `weddings-honeymoons.html`, and `group-travel.html`
+- Confirm the "custom vacations start from $200 total" line on `index.html` and `process.html`, or remove it. No other prices are shown on the site
+- Replace the text credential badges with your official logo files (see the comment above the `badges` list; keep only logos you are licensed to display)
 - Review the Sandals and Beaches copy so the reasons match your own experience
 - Review the About page story and credentials, and add a portrait
 
