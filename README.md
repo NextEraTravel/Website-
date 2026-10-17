@@ -1,6 +1,6 @@
 # Next Era Travel Website
 
-Website for Next Era Travel, a luxury travel advisory specializing in destination weddings, honeymoons, and couples travel, with wellness and group travel as growing areas.
+Website for Next Era Travel, a luxury travel advisory specializing in destination weddings, honeymoons, and couples travel, with river cruises, wellness escapes, and group travel.
 
 ## Brand direction
 
@@ -13,24 +13,29 @@ Soft luxury, emotionally intelligent, calm and direct. The site should make a vi
 
 ## Layout
 
-The home page follows an editorial, photo-led structure: hero with a row of four photos, a pattern-backed intro with paired buttons, a services carousel, three alternating image-and-text blocks, a numbered 01 to 05 process, a closing call-to-action band, a free guide signup, and a multi-column footer. Inner pages use a hero with a photo banner, followed by content and a closing band.
+An editorial, photo-led structure: a scrolling free-guide banner above the header, a header with a Menu panel, a hero with a row of photos, a second scrolling banner of services, a pattern-backed intro, a services carousel, a highlighted free guides section, alternating image-and-text blocks, a numbered 01 to 05 process, a closing call-to-action band, and a multi-column footer. Inner pages use a hero with a photo banner and a closing band.
 
 ## Pages and files
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Home |
-| `weddings-honeymoons.html` | Destination Weddings & Honeymoons |
-| `couples-travel.html` | Couples Travel |
-| `wellness-travel.html` | Wellness & Soft Luxury Travel |
-| `group-travel.html` | Group Travel & Retreats |
+| `index.html` | Home, including the free guides section (`#guides`) |
+| `weddings-honeymoons.html` | Weddings and honeymoons, with Sandals (`#sandals`) and Beaches (`#beaches`) sections |
+| `couples-travel.html` | Couples travel |
+| `river-cruises.html` | River cruises |
+| `wellness-travel.html` | Wellness escapes for everyone |
+| `group-travel.html` | Corporate retreats and events, youth sports, golf and tennis, family and women's trips, escorted and independent |
+| `podcast.html` | Podcast |
+| `order.html` | Guides to order |
 | `about.html` | About Christine |
-| `process.html` | How It Works & Planning Fees |
-| `contact.html` | Book a Consultation |
+| `process.html` | How it works and planning fees |
+| `contact.html` | Book a consultation |
 | `styles.css` | Shared styles |
-| `site.js` | Mobile menu and services carousel |
+| `site.js` | Menu panel and services carousel |
 
 This is a plain static site with no build step. Open `index.html` in a browser to preview it.
+
+The header (with the top banner) and the footer are repeated in every page between `SHARED-TOP` and `SHARED-FOOTER` comments. If you change the menu or footer links, update them in each file.
 
 ## Adding photos
 
@@ -42,13 +47,22 @@ Every photo spot is currently a soft color block. To use a real photo, put the i
 
 Keep the existing `ph-` color class as a fallback while the image loads.
 
+## Links to add
+
+Search for `href="#"` to find these. Each has a comment above it.
+
+- `weddings-honeymoons.html`: Sandals co-branded link, Beaches Resorts link
+- `index.html`: Close the Tabs, Ocean or River guide, Honeymoon Vibe quiz, Destination Wedding quiz
+- `podcast.html`: Apple Podcasts, Spotify, cover art, episode list
+- `order.html`: checkout link for the Destination Wedding Planning Dashboard
+
 ## Before launch
 
 - Replace `hello@example.com` in `contact.html` with the real email, or swap the button for a booking link
-- Point the "Get the snapshot" button on the home page to the Close the Tabs lead magnet
 - Confirm the Instagram link in the footer (`instagram.com/nexteratravel`) and add other social links
 - Add real client testimonials to the commented section on the home page
 - Confirm the planning fees shown on `process.html`, `weddings-honeymoons.html`, and `group-travel.html`
+- Review the Sandals and Beaches copy so the reasons match your own experience
 - Review the About page story and credentials, and add a portrait
 
 ## Deploying
