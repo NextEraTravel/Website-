@@ -474,3 +474,4 @@ details p { margin: 0.9rem 0 0; color: var(--muted); }
 .hero-intro { padding: 4rem 0 3rem; }
 .hero-intro .lead { max-width: 640px; margin-left: auto; margin-right: auto; }
 @media (max-width: 720px) { .hero.hero-bg { min-height: 78vh; background-position: 40% center; } }
+.hero-sub { margin: 0.9rem 0 0; max-width: 340px; font-size: 1rem; line-height: 1.55; color: #fff; text-shadow: 0 1px 12px rgba(0,0,0,0.35); }
