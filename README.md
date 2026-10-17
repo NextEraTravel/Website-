@@ -1,38 +1,38 @@
 # Next Era Travel Website
 
-Website for Next Era Travel, a luxury travel advisory specializing in destination weddings, honeymoons, and couples travel, with wellness travel as a growing focus.
+Website for Next Era Travel, a luxury travel advisory specializing in destination weddings, honeymoons, and couples travel, with wellness and group travel as growing areas.
 
 ## Brand direction
 
-Soft luxury, emotionally intelligent, calm and certain. The site should make a visitor feel understood before it tries to sell anything. Travel is not just about where you go, it's about how you feel while you're there.
+Soft luxury, emotionally intelligent, calm and direct. The site should make a visitor feel understood before it asks for anything. Travel is not just about where you go, it is about how you feel while you are there.
 
 - Lead with feeling and perspective, not deals or "book now" language
-- Warm, human, premium but approachable
-- Fewer emojis, nothing that reads as AI-generated or salesy
+- Short paragraphs, minimal emojis, no em dashes
+- Palette: sage, cream, beige, soft mauve, terracotta accent
+- Fonts: Montserrat (headings), Lato (body), Pinyon Script (small accents)
 
-## Project structure
+## Pages
 
-```
-index.html    Home page
-styles.css    Site styles
-```
+| File | Page |
+| --- | --- |
+| `index.html` | Home |
+| `weddings-honeymoons.html` | Destination Weddings & Honeymoons |
+| `couples-travel.html` | Couples Travel |
+| `wellness-travel.html` | Wellness & Soft Luxury Travel |
+| `group-travel.html` | Group Travel & Retreats |
+| `about.html` | About Christine |
+| `process.html` | How It Works & Planning Fees |
+| `contact.html` | Book a Consultation |
+| `styles.css` | Shared styles |
 
-This is a plain static site, so it needs no build step. Open `index.html` in a browser to preview it.
+This is a plain static site with no build step. Open `index.html` in a browser to preview it.
 
-## Placeholders to replace
+## Before launch
 
-- `hello@example.com` in the consultation button (swap for a booking link or your real email)
-- Page copy is a starting draft built from the brand positioning
-
-## Planned pages
-
-- Destination Weddings
-- Honeymoons
-- Couples Travel
-- Wellness Escapes
-- About Christine
-- Planning Process and Fees
-- Contact / Book a Consultation
+- Replace `hello@example.com` in `contact.html` with the real email, or swap the button for a booking link
+- Confirm the planning fees shown on `process.html`, `weddings-honeymoons.html`, and `group-travel.html`
+- Add a portrait to `about.html` (a commented placeholder shows where)
+- Review the About page story and credentials
 
 ## Deploying
 
