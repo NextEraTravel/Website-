@@ -21,7 +21,7 @@ An editorial, photo-led structure: a scrolling free-guide banner above the heade
 | --- | --- |
 | `index.html` | Home, including the free guides section (`#guides`) |
 | `weddings-honeymoons.html` | Weddings and honeymoons, with Sandals (`#sandals`) and Beaches (`#beaches`) sections |
-| `couples-travel.html` | Couples travel |
+| `custom-travel.html` | Custom travel (couples, families, multigenerational) |
 | `river-cruises.html` | River cruises |
 | `wellness-travel.html` | Wellness escapes for everyone |
 | `group-travel.html` | Corporate retreats and events, youth sports, golf and tennis, family and women's trips, escorted and independent |
