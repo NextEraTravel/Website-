@@ -490,3 +490,9 @@ details p { margin: 0.9rem 0 0; color: var(--muted); }
 .offer-link { margin-top: auto; padding-top: 0.6rem; align-self: center; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sage-deep); border-bottom: 1px solid currentColor; }
 @media (max-width: 900px) { .offer-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .offer-grid { grid-template-columns: 1fr; } .offer { border-radius: 140px 140px 6px 6px; } }
+
+/* ---------- Inner page hero: one full-width photo at the top, text beneath ---------- */
+.page-hero.page-hero-top { padding: 0 0 3.5rem; }
+.page-hero-top .hero-photo { width: 100%; height: min(58vh, 540px); background-size: cover; background-position: center; margin-bottom: 3.5rem; }
+.page-hero-top + .section { padding-top: 4.5rem; }
+@media (max-width: 720px) { .page-hero-top .hero-photo { height: 340px; margin-bottom: 2.5rem; } }
