@@ -88,7 +88,7 @@ Files Cloudflare reads: `_headers` (security and caching headers) and `404.html`
 
 ### Before going live
 
-- Replace `https://www.nexteratravelco.com` in every `.html` file, `sitemap.xml` and `robots.txt` with the real domain.
+- Replace `https://nexteratravelco.com` in every `.html` file, `sitemap.xml` and `robots.txt` with the real domain.
 - Cloudflare Pages serves pages without the `.html` ending (`/about` instead of `/about.html`) and redirects the old form. Canonical links, the sitemap and structured data already use the short form.
 - Paste the Google Analytics 4 Measurement ID into `analytics.js` (`GA_ID`).
 - Submit `sitemap.xml` in Google Search Console and set up a Google Business Profile.
