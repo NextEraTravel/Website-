@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /destination-wedding-guide-thanks
+
+Sitemap: https://www.nexteratravelco.com/sitemap.xml

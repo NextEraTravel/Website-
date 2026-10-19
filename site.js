@@ -1,4 +1,8 @@
 (function () {
+  // Always open pages at the top unless a same-page anchor was requested
+  try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}
+  if (!location.hash) { window.scrollTo(0, 0); window.addEventListener('pageshow', function () { if (!location.hash) window.scrollTo(0, 0); }); }
+
   // Menu panel
   var btn = document.querySelector('.menu-toggle');
   var nav = document.getElementById('site-nav');

@@ -55,7 +55,7 @@ Keep the existing `ph-` color class as a fallback while the image loads.
 Search for `href="#"` to find these. Each has a comment above it.
 
 - `weddings-honeymoons.html`: Sandals co-branded link, Beaches Resorts link
-- `index.html`: Close the Tabs, Ocean or River guide, Honeymoon Vibe quiz, Destination Wedding quiz
+- `index.html`: Ocean or River guide, Honeymoon Vibe quiz, Destination Wedding quiz
 - `podcast.html`: Apple Podcasts, Spotify, cover art, episode list
 - `order.html`: checkout link for the Destination Wedding Planning Dashboard
 
@@ -74,3 +74,21 @@ Search for `href="#"` to find these. Each has a comment above it.
 ## Deploying
 
 Works as-is on GitHub Pages, Netlify, or Vercel. Point the host at the repository root.
+
+
+## Deploying with GitHub and Cloudflare Pages
+
+1. Push this folder to a GitHub repository (the site files sit at the repository root).
+2. In Cloudflare, go to Workers & Pages, choose Create, then Pages, and connect the GitHub repository.
+3. Build settings: framework preset None, build command left empty, build output directory `/` (the repository root).
+4. After the first deploy, add the custom domain under the project's Custom domains tab, then update the placeholder domain below.
+5. Every push to the main branch redeploys the site automatically.
+
+Files Cloudflare reads: `_headers` (security and caching headers) and `404.html` (page not found).
+
+### Before going live
+
+- Replace `https://www.nexteratravelco.com` in every `.html` file, `sitemap.xml` and `robots.txt` with the real domain.
+- Cloudflare Pages serves pages without the `.html` ending (`/about` instead of `/about.html`) and redirects the old form. Canonical links, the sitemap and structured data already use the short form.
+- Paste the Google Analytics 4 Measurement ID into `analytics.js` (`GA_ID`).
+- Submit `sitemap.xml` in Google Search Console and set up a Google Business Profile.
