@@ -796,3 +796,28 @@ body[data-page="community"] .page-hero .wrap::before { background-image: url("da
 @media (max-width: 720px) { .site-header nav { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 #events .cards { margin-bottom: 1.5rem; }
+
+/* ---------- Large desktop scaling ---------- */
+@media (min-width: 1280px) {
+  .wrap { max-width: 1280px; }
+  .narrow { max-width: 760px; }
+  .panel { max-width: 860px; }
+  .hero-intro h2, .hero-intro .lead, .lead-in { max-width: 760px; }
+  .page-hero .lead { max-width: 720px; }
+  .quote, .pull { max-width: 900px; }
+}
+@media (min-width: 1440px) {
+  html { font-size: 112.5%; }
+  .wrap { max-width: 1400px; }
+}
+@media (min-width: 1800px) {
+  html { font-size: 125%; }
+  .wrap { max-width: 1560px; }
+}
+@media (min-width: 721px) {
+  .hero.hero-bg .eyebrow { max-width: min(460px, 36vw); line-height: 1.15; }
+}
+@media (min-width: 1440px) {
+  .hero.hero-bg h1 { max-width: 420px; }
+  .hero-sub { max-width: 400px; }
+}
