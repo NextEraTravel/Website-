@@ -1,0 +1,5 @@
+# Old addresses that Google may still list -> send visitors to the home page
+/nexteratravel / 301
+/nexteratravel/ / 301
+/nexteratravel/* / 301
+/home / 301
