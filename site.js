@@ -35,4 +35,14 @@
       track.scrollTo({ left: atEnd ? 0 : track.scrollLeft + step, behavior: 'smooth' });
     });
   }
+  // Landing page: show the sticky "Book a call" bar on phones once the hero is out of view
+  var sticky = document.getElementById('lp-sticky');
+  var lpHero = document.querySelector('.lp-hero');
+  var lpFinal = document.getElementById('lp-final');
+  if (sticky && lpHero && lpFinal && 'IntersectionObserver' in window) {
+    var heroOut = false, finalIn = false;
+    var update = function () { sticky.classList.toggle('show', heroOut && !finalIn); };
+    new IntersectionObserver(function (e) { heroOut = !e[0].isIntersecting; update(); }).observe(lpHero);
+    new IntersectionObserver(function (e) { finalIn = e[0].isIntersecting; update(); }).observe(lpFinal);
+  }
 })();
